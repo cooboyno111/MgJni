@@ -1,4 +1,3 @@
-# build helloworld executable when user executes "make"
 libTinyServer.so: mongoose.o TinyServer.o
 	$(CC) -Wall -shared -o libTinyServer.so TinyServer.o mongoose.o -DMG_ENABLE_SSL -lcrypto -lssl
 TinyServer.o: TinyServer.c
