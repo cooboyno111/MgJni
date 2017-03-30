@@ -10,6 +10,6 @@ data的数据不要超过2048个字节。
 
 这些数据会回调到TinyServer.java	protected String callback(String data) 这个方法中。
 
-当然您需要返回一个字符串让TinyServer回调给调用者。
+当然您需要返回一个非空的字符串让TinyServer回调给调用者。
 
 具体内部制定什么协议及实现由您自己来定了。
